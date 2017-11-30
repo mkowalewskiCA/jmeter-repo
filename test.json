@@ -3,7 +3,7 @@
     "configuration": {
         "dedicatedIpsEnabled": false,
         "location": "us-west-1",
-        "concurrency": 100,
+        "concurrency": 10,
         "plugins": {
             "splitCSV": {
                 "enabled": false
@@ -13,17 +13,17 @@
             },
             "jmeter": {
                 "override": {
-                    "duration": 25,
-                    "rampup": 600,
+                    "duration": 5,
+                    "rampup": 60,
                     "threads": null,
                     "iterations": -1
                 },
-                "version": "2.12blazemeter",
-                "filename": "file.jmx"
+                "version": "3.3",
+                "filename": "dummy.jmx"
             }
         },
         "type": "jmeter",
         "serverCount": null
     },
-    "name": "MyJmeterTest"
+    "name": "Sample-App-Build-${BUILD_NUMBER}"
 }
