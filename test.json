@@ -1,0 +1,29 @@
+{
+    "projectId": null,
+    "configuration": {
+        "dedicatedIpsEnabled": false,
+        "location": "us-west-1",
+        "concurrency": 100,
+        "plugins": {
+            "splitCSV": {
+                "enabled": false
+            },
+            "reportEmail": {
+                "enabled": true
+            },
+            "jmeter": {
+                "override": {
+                    "duration": 25,
+                    "rampup": 600,
+                    "threads": null,
+                    "iterations": -1
+                },
+                "version": "2.12blazemeter",
+                "filename": "file.jmx"
+            }
+        },
+        "type": "jmeter",
+        "serverCount": null
+    },
+    "name": "MyJmeterTest"
+}
